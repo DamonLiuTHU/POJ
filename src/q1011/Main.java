@@ -112,8 +112,14 @@ public class Main {
 			resultlist.add(result);
 		} while (stick_count != 0);
 
+		int counter = 0;
 		for (int a : resultlist) {
-			System.out.println(a);
+			if(counter!=0){
+				System.out.println("");
+			}
+			System.out.print(a);
+			
+			counter ++;
 		}
 	}
 
