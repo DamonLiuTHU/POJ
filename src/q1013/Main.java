@@ -1,9 +1,6 @@
 package q1013;
 
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.Scanner;
 
 public class Main {
@@ -24,7 +21,11 @@ public class Main {
 	
 	
 	private void increaseBadDegree(char temp){
-		list.replace(temp, list.get(temp)+1);
+		list.put(temp, list.get(temp)+1);
+	}
+	
+	private void removeBadDegree(char temp){
+		list.put(temp, Integer.MIN_VALUE);
 	}
 
 	private void calculate() {
@@ -32,6 +33,14 @@ public class Main {
 		// ArrayList<Character> badcoins = new ArrayList<Character>();
 		for (String[] item : info) {
 			if (item[2].compareToIgnoreCase("even") == 0) {
+				for (char temp : item[0].toCharArray()) {
+//					list.replace(temp, list.get(temp)+1);
+					removeBadDegree(temp);
+				}
+				for (char temp : item[1].toCharArray()) {
+//					list.replace(temp, list.get(temp)+1);
+					removeBadDegree(temp);
+				}
 				continue;
 			}
 			if (item[2].compareToIgnoreCase("up") == 0) {
@@ -124,6 +133,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		int cases = sc.nextInt();
 		Main[] case_result = new Main[cases];
