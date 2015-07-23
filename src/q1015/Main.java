@@ -30,13 +30,13 @@ public class Main {
 			for(int i = 0 ; i< n;i++){
 				int pi = sc.nextInt();
 				int di = sc.nextInt();
-				info[i][0] = pi;
-				info[i][1] = di;
+				info[i][0] = pi;  //!important
+				info[i][1] = di;  //!important
 				
 				int vi = di - pi;
-				info[i][2] = vi;
+				info[i][2] = vi;  //!important
 				int si = di + pi;
-				info[i][3] = si;
+				info[i][3] = si;  //!important
 			}
 			String[] temp = Main.deal(info, n, m);
 			result.add(temp);
