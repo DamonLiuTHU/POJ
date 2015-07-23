@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Main {
 	static int[] input;
-	static int[] array;
-	static int[] re_array;
+	static int[] max_subsequence_from_left;
+	static int[] max_subsequence_from_right;
 	static int length;
 	static int max = Integer.MIN_VALUE;
 //	public static int result;
@@ -13,24 +13,24 @@ public class Main {
 
 	public static int getdA(int[] i_input) {
 		input = i_input;
-		array = new int[input.length];
-		re_array = new int[input.length];
+		max_subsequence_from_left = new int[input.length];
+		max_subsequence_from_right = new int[input.length];
 		length = input.length;
 		max = 0;
 		if(length == 1){
 			return input[0];
 		}
-		array[0] = input[0];
-		re_array[length-1] = input[length-1];
+		max_subsequence_from_left[0] = input[0];
+		max_subsequence_from_right[length-1] = input[length-1];
 		for (int i = 1; i < length-1; i++) {
-			array[i] = getLeftMax(i);
+			max_subsequence_from_left[i] = getLeftMax(i);
 			int index = length - 1 - i;
-			re_array[index] = getRigthMax(index);
+			max_subsequence_from_right[index] = getRigthMax(index);
 		}
-		array[length - 1] = getLeftMax(length-1);
-		re_array[0] = getRigthMax(0);
+		max_subsequence_from_left[length - 1] = getLeftMax(length-1);
+		max_subsequence_from_right[0] = getRigthMax(0);
 		for (int i = 0; i < length - 1; i++) {
-			int temp =array[i] + getMaxValueFromIndex(i+1); 
+			int temp =max_subsequence_from_left[i] + getMaxValueFromIndex(i+1); 
 			if ( temp > max) {
 				max = temp;
 			}
@@ -43,8 +43,8 @@ public class Main {
 	private static int getMaxValueFromIndex(int index){
 		int max = Integer.MIN_VALUE;
 		for(int i = index;i<length;i++){
-			if(re_array[i]>max){
-				max = re_array[i];
+			if(max_subsequence_from_right[i]>max){
+				max = max_subsequence_from_right[i];
 			}
 		}
 		return max;
@@ -52,11 +52,11 @@ public class Main {
 
 	private static int getRigthMax(int index) {
 //		index += 1;
-		return Math.max(input[index] + re_array[index+1], input[index]);
+		return Math.max(input[index] + max_subsequence_from_right[index+1], input[index]);
 	}
 
 	private static int getLeftMax(int index) {
-		return Math.max(array[index - 1] + input[index], input[index]);
+		return Math.max(max_subsequence_from_left[index - 1] + input[index], input[index]);
 	}
 
 	public static void main(String[] args) {
