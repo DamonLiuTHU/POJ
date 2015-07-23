@@ -1,7 +1,5 @@
 package q2479;
 
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
@@ -47,7 +45,7 @@ public class Main {
 	}
 
 	public static void main(String[] args) {
-		long begin = System.currentTimeMillis();
+//		long begin = System.currentTimeMillis();
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		int casenumber = sc.nextInt();
@@ -65,9 +63,9 @@ public class Main {
 			System.out.println(m);
 		}
 
-		long end = System.currentTimeMillis();
-		long diff = end - begin;
-		System.out.println("time " + diff);
+//		long end = System.currentTimeMillis();
+//		long diff = end - begin;
+//		System.out.println("time " + diff);
 	}
 
 }
