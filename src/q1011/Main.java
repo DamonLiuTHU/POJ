@@ -173,7 +173,9 @@ public class Main {
 			}
 		}
 	}
-
+	/*
+	 * 递归的查找，使用了回溯法。
+	 */
 	public static boolean search(int res, int next, int cpl) {
 		if (res == max) {
 			res = 0;

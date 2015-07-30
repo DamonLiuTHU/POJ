@@ -47,7 +47,8 @@ public class Main {
 		}
 		return true;
 	}
-
+//	static int Joseph[]={0,2,7,5,30,169,441,1872,7632,1740,93313,459901,1358657,2504881,1245064};
+	static int Joseph[] = new int[14];
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -55,10 +56,22 @@ public class Main {
 		while (true) {
 			int k = sc.nextInt(); // k is the number of good guys and bad
 									// guys,so total number is 2*k
+//			assertTrue(k>0&&k<14,"NUMBER ERROR");
+//			assert(k<14);
+			if(k>=14){
+				continue;
+			}
 			if (k == 0) {
 				break;
 			} else {
-				result.addElement(new Main().getMinInterval(k));
+				if(Joseph[k]!=0){
+					System.out.println(Joseph[k]);
+					continue;
+				}
+				int value = new Main().getMinInterval(k);
+				System.out.println(value);
+				Joseph[k] = value;
+//				result.addElement(value);
 			}
 		}
 		for (Integer temp : result) {
