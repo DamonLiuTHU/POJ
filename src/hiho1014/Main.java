@@ -82,6 +82,9 @@ public class Main {
 				current = current.next;
 			}
 			
+			if(current==null){
+				return null;
+			}
 			result = current.value==tmp;
 			
 			if(result){
