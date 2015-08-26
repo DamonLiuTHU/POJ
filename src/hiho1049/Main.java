@@ -14,6 +14,51 @@ public class Main {
 		}
 	}
 
+	static Node root = null;
+
+	private void getPostOrder(String pre_order, String mid_order, Node node) {
+		// TODO Auto-generated method stub
+		if(pre_order.length() == mid_order.length() && pre_order.length()==1){
+			return;
+		}
+		char root_char = pre_order.charAt(0);
+		String[] subTrees = mid_order.split(String.valueOf(root_char));
+		String[] preTrees = new String[subTrees.length];
+		int index = 1;
+		for(int i=0;i<subTrees.length;i++){
+			preTrees[i] = pre_order.substring(index, index+subTrees[i].length());
+			index += subTrees[i].length();
+		}
+
+		if (mid_order.indexOf(root_char) == 0) {
+			//only right son
+			node.right = new Node(preTrees[0].charAt(0));
+		} else if (mid_order.indexOf(root_char) == mid_order.length() - 1) {
+			node.left = new Node(preTrees[0].charAt(0));
+		} else {
+			node.left = new Node(preTrees[0].charAt(0));
+			node.right = new Node(preTrees[1].charAt(0));
+			for(int i=0;i<subTrees.length;i++){
+				String tmp_pre = preTrees[i];
+				String tmp_mid  = subTrees[i];
+				getPostOrder(tmp_pre, tmp_mid, i==0?node.left:node.right);
+			}
+		}
+	}
+	
+	
+	public static void print(Node n){
+		if(n!=null){
+			if(n.left!=null){
+				print(n.left);
+			}
+			if(n.right!=null){
+				print(n.right);
+			}
+			System.out.print(n.value);
+		}
+	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -25,35 +70,12 @@ public class Main {
 			Main m = new Main();
 			String pre_order = in.next();
 			String mid_order = in.next();
-			m.root = m.new Node(pre_order.charAt(0));
-			m.getPostOrder(pre_order, mid_order);
-			System.out.println("");
+			Main.root = m.new Node(pre_order.charAt(0));
+			m.getPostOrder(pre_order, mid_order, root);
+//			System.out.println("");
+			Main.print(root);
 		}
 
-	}
-
-	Node root;
-
-	private void getPostOrder(String pre_order, String mid_order,node ) {
-		// TODO Auto-generated method stub
-		char root = pre_order.charAt(0);
-		if (mid_order.indexOf(root) == 0) { // there is only one right tree.
-			
-		} else if (mid_order.indexOf(root) == mid_order.length() - 1) { // only a left tree
-			
-		} else {
-			String[] subTrees = mid_order.split(String.valueOf(root));
-			String[] preTrees = new String[subTrees.length];
-			int counter = 0;
-			int index = 1;
-			for (String tree : subTrees) {
-				preTrees[counter] = pre_order.substring(index, tree.length());
-				index += tree.length();
-				counter++;
-			}
-
-		}
-//		return;
 	}
 
 }
