@@ -18,32 +18,42 @@ public class Main {
 
 	private void getPostOrder(String pre_order, String mid_order, Node node) {
 		// TODO Auto-generated method stub
-		if(pre_order.length() == mid_order.length() && pre_order.length()==1){
+		if(pre_order.length()==1){
 			return;
 		}
 		char root_char = pre_order.charAt(0);
-		String[] subTrees = mid_order.split(String.valueOf(root_char));
+		String[] subTrees = null;
+		if(mid_order.indexOf(root_char)!=0){
+			subTrees = mid_order.split(String.valueOf(root_char));
+		}else{
+			subTrees  = new String[1];
+			subTrees[0] = mid_order.substring(1);
+		}
+		
 		String[] preTrees = new String[subTrees.length];
 		int index = 1;
 		for(int i=0;i<subTrees.length;i++){
 			preTrees[i] = pre_order.substring(index, index+subTrees[i].length());
 			index += subTrees[i].length();
 		}
-
+		boolean has_left = true;
+		boolean has_right = true;
 		if (mid_order.indexOf(root_char) == 0) {
 			//only right son
-			node.right = new Node(preTrees[0].charAt(0));
+			node.right = new Node(preTrees[0].charAt(0)); has_left = false;
+			getPostOrder(preTrees[0], subTrees[0], node.right);
 		} else if (mid_order.indexOf(root_char) == mid_order.length() - 1) {
-			node.left = new Node(preTrees[0].charAt(0));
+			node.left = new Node(preTrees[0].charAt(0)); has_right = false;
+			getPostOrder(preTrees[0], subTrees[0], node.left);
 		} else {
-			node.left = new Node(preTrees[0].charAt(0));
-			node.right = new Node(preTrees[1].charAt(0));
-			for(int i=0;i<subTrees.length;i++){
-				String tmp_pre = preTrees[i];
-				String tmp_mid  = subTrees[i];
-				getPostOrder(tmp_pre, tmp_mid, i==0?node.left:node.right);
-			}
+			char left = preTrees[0].charAt(0);
+			char right = preTrees[1].charAt(0);
+			node.left = new Node(left);
+			node.right = new Node(right);
+			getPostOrder(preTrees[0], subTrees[0], node.left);
+			getPostOrder(preTrees[1], subTrees[1], node.right);
 		}
+		
 	}
 	
 	
