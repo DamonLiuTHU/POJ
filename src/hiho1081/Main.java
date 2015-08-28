@@ -1,15 +1,19 @@
 package hiho1081;
-//the default value for int arrays are 0. which is not so good for me~
+
+import java.util.ArrayList;
 import java.util.Scanner;
 
 class Main{
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		while(sc.hasNext()){
+			int count = 0;
 			int N = sc.nextInt();
 			int M = sc.nextInt();
 			int S = sc.nextInt();
 			int T = sc.nextInt();
+			ArrayList<Integer> pathset = new ArrayList<Integer>(N);
 			int Map[][] = new int[N+1][N+1];
 			for(int i = 1;i<=M;i++){
 				int start = sc.nextInt();
@@ -20,27 +24,33 @@ class Main{
 					Map[end][start] = length;
 				}
 			}
-			@SuppressWarnings("unused")
 			int dist[] = new int[N+1];
-			int cycleTimes = N-1;
 			int index = S;
-			while(cycleTimes>0){
-				cycleTimes--;
+			pathset.add(index);
+			while(pathset.size()!=N){
 				int min = Integer.MAX_VALUE;
-				int tmp_index = index;
-				for(int i=1;i<=N;i++){
-					if(i==S) continue;
-					if(dist[i]==0) dist[i] = Integer.MAX_VALUE;
-					if(Map[index][i]==0) {Map[index][i] = Integer.MAX_VALUE;continue;}
-					int tmp = Map[index][i];
-					if(tmp==Integer.MAX_VALUE) continue;
-					dist[i] = Math.min(dist[index]+tmp,dist[i]);
-					if(dist[i]<min){
+				for(int i=1;i<=N;i++){			
+					if(pathset.contains(i)){
+						continue;
+					}
+					if(dist[i]==0) 
+						dist[i] = Integer.MAX_VALUE;
+					for(int nodes:pathset){
+						count++;
+						if(Map[nodes][i]==0) {Map[nodes][i] = Integer.MAX_VALUE;continue;}
+						if(Map[nodes][i]==Integer.MAX_VALUE) continue;
+						int tmp = Math.min(dist[nodes]+Map[nodes][i],dist[i]);
+						if(tmp < dist[i]){
+							dist[i] = tmp;
+						}
+					}
+					if(dist[i] < min){
 						min = dist[i];
-						tmp_index = i;
+						index = i;
 					}
 				}
-				index = tmp_index;
+				
+				pathset.add(index);
 			}
 			System.out.println(dist[T]);	
 		}	
