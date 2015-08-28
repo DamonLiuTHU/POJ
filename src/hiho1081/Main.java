@@ -8,7 +8,7 @@ class Main{
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		while(sc.hasNext()){
-			int count = 0;
+//			int count = 0;
 			int N = sc.nextInt();
 			int M = sc.nextInt();
 			int S = sc.nextInt();
@@ -27,7 +27,9 @@ class Main{
 			int dist[] = new int[N+1];
 			int index = S;
 			pathset.add(index);
-			while(pathset.size()!=N){
+			int cycleTime = N;
+			while(pathset.size()!=N&&cycleTime!=0){
+				cycleTime--;
 				int min = Integer.MAX_VALUE;
 				for(int i=1;i<=N;i++){			
 					if(pathset.contains(i)){
@@ -36,7 +38,7 @@ class Main{
 					if(dist[i]==0) 
 						dist[i] = Integer.MAX_VALUE;
 					for(int nodes:pathset){
-						count++;
+//						count++;
 						if(Map[nodes][i]==0) {Map[nodes][i] = Integer.MAX_VALUE;continue;}
 						if(Map[nodes][i]==Integer.MAX_VALUE) continue;
 						int tmp = Math.min(dist[nodes]+Map[nodes][i],dist[i]);
