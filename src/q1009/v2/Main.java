@@ -79,7 +79,7 @@ public class Main {
 	
 	public void Main(){
 		sc = new Scanner(System.in);
-		Vector<InnerContainer> result = new Vector<>();
+		Vector<InnerContainer> result = new Vector<InnerContainer>();
 		while (true) {
 			int width = sc.nextInt();
 			if (width == 0) {

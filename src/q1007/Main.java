@@ -29,7 +29,6 @@ public class Main {
 	public static void mysort(Vector<String> input){
 		Collections.sort(input,new Comparator<String>() {
 
-			@Override
 			public int compare(String o1, String o2) {
 				// TODO Auto-generated method stub
 				return measure(o1)-measure(o2);

@@ -8,7 +8,7 @@ public class Main {
 	static int INPUT_COUNT = 12;
 	static DecimalFormat format = new DecimalFormat("#.00");
 	
-	public static String shortenNumber(Float f){
+	public static String shortenNumber(float f){
 		return format.format(f);
 	}
 	
@@ -17,7 +17,7 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		float sum = 0.00f;
 		for(int i = 0 ; i< INPUT_COUNT ;i++	){
-			Float f = sc.nextFloat();
+			float f = sc.nextFloat();
 			if(f <= 0){
 				continue;
 			}

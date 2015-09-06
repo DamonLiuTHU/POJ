@@ -107,7 +107,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		sc = new Scanner(System.in);
-		Vector<Vector<Integer>> result = new Vector<>();
+		Vector<Vector<Integer>> result = new Vector<Vector<Integer>>();
 		while (true) {
 
 			int width = sc.nextInt();
