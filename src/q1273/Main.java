@@ -37,7 +37,7 @@ static LinkedList<int[]> simplifiedInput;
 
 			}); // get this map sourted by the index
 
-			simplifiedInput = new LinkedList<int[]>();  // because of the situation that the flow forms a cycle.
+			simplifiedInput = new LinkedList<int[]>();  // because of the situation that the flow forms a cycle. 
 			for(int[] array : originInput){
 				if(array[0]==1){
 					simplifiedInput.add(array);
