@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class Main {
 	
+	private static Scanner sc;
+
 	class Node
 	{
 		char value;
@@ -107,7 +109,7 @@ public class Main {
 			if(current==null){
 				return null;
 			}
-			boolean result = current.value==tmp;
+//			boolean result = current.value==tmp;
 			while(current!=null && current.value!=tmp){
 				current = current.next;
 			}
@@ -115,14 +117,13 @@ public class Main {
 			if(current == null){
 				return null;
 			}
-			result = current.value==tmp;
+//			result = current.value==tmp;
 			return current;
 		}
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
+		sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		String first = sc.next();
 		Main main = new Main();

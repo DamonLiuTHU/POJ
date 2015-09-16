@@ -1,8 +1,7 @@
 package hiho1148;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
-import java.util.Vector;
+//import java.util.Vector;
 
 public class Main {
 
@@ -19,10 +18,10 @@ public class Main {
 		for(int i=0;i<months_array.length;i++){
 			months.put(months_array[i], i+1);
 		}
-		Scanner sc = new Scanner(System.in);
+		sc = new Scanner(System.in);
 //		int csnumber = Integer.parseInt(sc.nextLine());
 		int csnumber = sc.nextInt();
-		ArrayList<String> result = new ArrayList<String>(csnumber);
+//		ArrayList<String> result = new ArrayList<String>(csnumber);
 		for (int i = 0; i < csnumber; i++) {
 //			String date01 = sc.nextLine().replace(",", "");
 //			String date02 = sc.nextLine().replace(",", "");
@@ -36,7 +35,7 @@ public class Main {
 //			int day02 = Integer.parseInt(date02parts[1]);
 			String month_string = sc.next();
 			int month01 =months.get(month_string);
-			int day01 = Integer.parseInt(sc.next().replace(",", ""));
+//			int day01 = Integer.parseInt(sc.next().replace(",", ""));
 			int year01 = sc.nextInt();
 			
 			int month02 = months.get(sc.next());
@@ -85,7 +84,9 @@ public class Main {
 
 	}
 	
-	private static Vector<Integer> okyears = new Vector<Integer>();
+//	private static Vector<Integer> okyears = new Vector<Integer>();
+
+	private static Scanner sc;
 	private static boolean isTrue(int year) {
 		// TODO Auto-generated method stub
 //		return false;

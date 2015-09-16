@@ -4,10 +4,12 @@ import java.util.Scanner;
 
 public class Main {
 
+	private static Scanner in;
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Scanner in = new Scanner(System.in);
+		in = new Scanner(System.in);
 		while (in.hasNext()) {
 			int N = in.nextInt();
 			int result = fibo(N);

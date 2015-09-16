@@ -2,11 +2,12 @@ package hiho1037;
 
 import java.util.Arrays;
 import java.util.Scanner;
-import java.util.Vector;
 
 public class Main {
+	private static Scanner in;
+
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
+		in = new Scanner(System.in);
 		while (in.hasNext()) {
 			int N = in.nextInt();
 //			Vector<int[]> input = new Vector<int[]>(2);

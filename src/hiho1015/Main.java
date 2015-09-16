@@ -9,14 +9,14 @@ public class Main {
 	 * KMP算法 http://kb.cnblogs.com/page/176818/
 	 */
 
+	private static Scanner sc;
+
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
+		sc = new Scanner(System.in);
 		int cases = sc.nextInt();
 		for (int index = 0; index < cases; index++) {
 			String pattern = sc.next();
 			String origin_info = sc.next();
-			@SuppressWarnings("unused")
 			int[] next = Main.getNext(pattern);
 			if (!origin_info.contains(pattern)) {
 				// return 0;

@@ -1,6 +1,5 @@
 package hiho1051;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {

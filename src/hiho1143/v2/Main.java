@@ -7,11 +7,11 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Scanner in = new Scanner(System.in);
+		in = new Scanner(System.in);
 		while (in.hasNext()) {
 			long N = in.nextLong();
 //			long result = fibo(N);
-			long result = 0;
+//			long result = 0;
 			long[][] tmp = get_a_n(N);
 //			long[] res = {tmp[1][0],tmp[1][1]};
 			long v = tmp[1][1];
@@ -21,6 +21,7 @@ public class Main {
 
 	}
 	static final long basic[][] ={ {0,1},{1,1} };
+	private static Scanner in;
 	private static long[][] get_a_n(long n){
 		if(n==1){
 			return basic;

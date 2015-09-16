@@ -1,9 +1,10 @@
 package hiho1032;
 
 import java.util.Scanner;
-import java.util.Stack;
 
 public class Main {
+
+	private static Scanner sc;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -12,7 +13,7 @@ public class Main {
 		 * 而你要告诉我你的答案的话，只要将你计算出的最长回文子串的长度按照我给你的顺序依次输出到标准输出就可以了！你看这就是一个例子。”
 		 */
 		
-		Scanner sc = new Scanner(System.in);
+		sc = new Scanner(System.in);
 		int N = sc.nextInt();
 		while(N>0){
 			N--;
@@ -23,7 +24,7 @@ public class Main {
 
 	private static int getMaxLength(String string) {
 		int MAX_LENGTH=0;
-		// 找到最长回文串 version01 使用stack  //faile
+		// 找到最长回文串 version01 使用stack  //fail
 //		Stack<Character> stack = new Stack<Character>();
 //		for(int i=0;i<string.length()/2+1;i++){
 //			char tmp = string.charAt(i);

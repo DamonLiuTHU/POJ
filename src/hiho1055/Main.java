@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class Main {
 
+	private static Scanner in;
+
 	class Node {
 		public ArrayList<Node> sons = new ArrayList<Node>();
 		public Node father = null;
@@ -19,7 +21,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Main m = new Main();
-		Scanner in = new Scanner(System.in);
+		in = new Scanner(System.in);
 		while (in.hasNext()) {
 			int N = in.nextInt();
 			int M = in.nextInt();

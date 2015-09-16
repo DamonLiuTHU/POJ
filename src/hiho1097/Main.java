@@ -6,8 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		// use 'Prim' 算法,最小生成树
-		Scanner sc = new Scanner(System.in);
+		sc = new Scanner(System.in);
 		int N = sc.nextInt(); // the number of cities / the number of Nodes in
 								// the graph
 		int[][] Map = new int[N][N];
@@ -29,6 +28,7 @@ public class Main {
 	}
 
 	static int distance = 0;
+	private static Scanner sc;
 	
 	/*
 	 * 	0 4 0 0 0 0 0 8 0
