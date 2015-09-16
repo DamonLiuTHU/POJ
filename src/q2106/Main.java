@@ -11,25 +11,25 @@ import java.util.Stack;
  *
  */
 public class Main {
-	static HashMap<Character, Integer> inStackPriority = new HashMap<Character, Integer>(4);
-	static HashMap<Character, Integer> outStackPriority = new HashMap<Character, Integer>(4);
+	static HashMap<Character, Integer> isp = new HashMap<Character, Integer>(4);
+	static HashMap<Character, Integer> osp = new HashMap<Character, Integer>(4);
 	static Stack<Character> operator;
-	static Stack<Character> VF;
+	static Stack<Character> values;
 	private static Scanner sc;
 
 	public static void main(String[] args) {
-		inStackPriority.put(')', 20);
-		outStackPriority.put(')', 1);
-		inStackPriority.put('!', 12);
-		outStackPriority.put('!', 13);
-		inStackPriority.put('&', 10);
-		outStackPriority.put('&', 9);
-		inStackPriority.put('|', 8);
-		outStackPriority.put('|', 7);
-		inStackPriority.put('(', 1);
-		outStackPriority.put('(', 20);
-		inStackPriority.put('#', 0);
-		outStackPriority.put('#', 0);
+		isp.put(')', 20);
+		osp.put(')', 1);
+		isp.put('!', 12);
+		osp.put('!', 13);  //单目运算符比较特别，他的isp要比osp低才可以。
+		isp.put('&', 10);
+		osp.put('&', 9);
+		isp.put('|', 8);
+		osp.put('|', 7);
+		isp.put('(', 1);
+		osp.put('(', 20);
+		isp.put('#', 0);
+		osp.put('#', 0);
 		sc = new Scanner(System.in);
 		int counter = 0;
 		while (sc.hasNext()) {
@@ -43,14 +43,14 @@ public class Main {
 			// VF.clear();
 			operator = new Stack<Character>();
 			operator.push('#');
-			VF = new Stack<Character>();
+			values = new Stack<Character>();
 			for (int i = 0; i < expression.length(); i++) {
 				char tmp = expression.charAt(i);
 				if (tmp == ' ')
 					continue;
 				if (isOperator(tmp)) {
-					int tmpOutPriority = outStackPriority.get(tmp);
-					int tmpInsidePriority = inStackPriority.get(operator.peek());
+					int tmpOutPriority = osp.get(tmp);
+					int tmpInsidePriority = isp.get(operator.peek());
 					if (tmpOutPriority > tmpInsidePriority) {
 						operator.push(tmp);
 					} else if (tmpOutPriority == tmpInsidePriority) {
@@ -58,35 +58,35 @@ public class Main {
 					} else if (tmpOutPriority < tmpInsidePriority) {
 						char op = operator.pop();
 						char result = Main.calculate(op);
-						VF.push(result);
+						values.push(result);
 						if (tmp == ')') {
 							char insideTop = operator.peek();
 							while (insideTop != '(') {
 								result = calculate(insideTop);
-								VF.push(result);
+								values.push(result);
 								operator.pop();
 								insideTop = operator.peek();
 							}
 							operator.pop();
 						} else {
 							op = operator.peek();
-							while (outStackPriority.get(tmp) < inStackPriority.get(op)) {
-								VF.push(Main.calculate(operator.pop()));
+							while (osp.get(tmp) < isp.get(op)) {
+								values.push(Main.calculate(operator.pop()));
 								op = operator.peek();
 							}
 							operator.push(tmp);
 						}
 					}
 				} else {
-					VF.push(tmp);
+					values.push(tmp);
 				}
 			}
 			while (operator.size() > 1) {
 				char op = operator.pop();
-				VF.push(Main.calculate(op));
+				values.push(Main.calculate(op));
 			}
-			System.out.println("Expression " + counter + ": " + VF.pop());
-			VF = null;
+			System.out.println("Expression " + counter + ": " + values.pop());
+			values = null;
 			operator = null;
 			System.gc();
 		}
@@ -98,21 +98,21 @@ public class Main {
 		char o1, o2;
 		switch (op) {
 		case '|':
-			o1 = VF.pop();
-			o2 = VF.pop();
+			o1 = values.pop();
+			o2 = values.pop();
 			if (o1 == True || o2 == True)
 				return True;
 			else
 				return False;
 		case '&':
-			o1 = VF.pop();
-			o2 = VF.pop();
+			o1 = values.pop();
+			o2 = values.pop();
 			if (o1 == True && o2 == True)
 				return True;
 			else
 				return False;
 		case '!':
-			o1 = VF.pop();
+			o1 = values.pop();
 			return o1 == True ? False : True;
 		default:
 			System.exit(404);
@@ -122,7 +122,7 @@ public class Main {
 	}
 
 	private static boolean isOperator(char tmp) {
-		return inStackPriority.keySet().contains(tmp);
+		return isp.keySet().contains(tmp);
 	}
 
 }
