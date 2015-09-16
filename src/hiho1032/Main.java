@@ -24,20 +24,34 @@ public class Main {
 
 	private static int getMaxLength(String string) {
 		int MAX_LENGTH=0;
-		// 找到最长回文串 version01 使用stack  //fail
-//		Stack<Character> stack = new Stack<Character>();
-//		for(int i=0;i<string.length()/2+1;i++){
-//			char tmp = string.charAt(i);
-//			if(stack.isEmpty()){
-//				stack.push(tmp);
-//			}else{
-//				char top = stack.peek();
-//				if(top!=)
-//			}
-//		}
-		
-		
+//		int MAX_RIGHT_EDGE_CENTER = 0; 
+//		int MAX_RIGHT_EDGE = 0 ;
+		for(int centerPos = 0;centerPos<string.length();centerPos++){
+			
+			for(int length = 0;length <=Math.min(string.length()-centerPos-1, centerPos);length++){
+				String substring = string.substring(centerPos-length,centerPos+length+1);
+				if(Main.isPlalindrome(substring)){
+					MAX_LENGTH = 2*length+1 > MAX_LENGTH ? 2*length+1 : MAX_LENGTH;
+//					int tmpRightEdge = centerPos + length; 
+//					if(tmpRightEdge>MAX_RIGHT_EDGE){
+//						MAX_RIGHT_EDGE = tmpRightEdge;
+////						MAX_RIGHT_EDGE_CENTER = centerPos;
+//					}
+//					MAX_RIGHT_EDGE_CENTER = tmpRightEdge>MAX_RIGHT_EDGE_CENTER?tmpRightEdge:MAX_RIGHT_EDGE_CENTER;
+				}
+			}
+		}
 		return MAX_LENGTH;
+	}
+
+	private static boolean isPlalindrome(String substring) {
+		// TODO Auto-generated method stub
+		StringBuilder sb = new StringBuilder(substring);
+		String reversed = sb.reverse().toString();
+		if(reversed.compareTo(substring)==0){
+			return true;
+		}
+		return false;
 	}
 
 }
