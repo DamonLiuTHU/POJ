@@ -3,7 +3,14 @@ package q2106;
 import java.util.HashMap;
 import java.util.Scanner;
 import java.util.Stack;
-
+/**
+ * 神一样的测试数据 
+ * F|(F)
+ * !!!!!F
+ * (((V)))  这三个过了就OK了。  好厉害！
+ * @author damonliu
+ *
+ */
 public class Main {
 	static HashMap<Character, Integer> inStackPriority = new HashMap<Character, Integer>(4);
 	static HashMap<Character, Integer> outStackPriority = new HashMap<Character, Integer>(4);
@@ -15,7 +22,7 @@ public class Main {
 		inStackPriority.put(')', 20);
 		outStackPriority.put(')', 1);
 		inStackPriority.put('!', 12);
-		outStackPriority.put('!', 11);
+		outStackPriority.put('!', 13);
 		inStackPriority.put('&', 10);
 		outStackPriority.put('&', 9);
 		inStackPriority.put('|', 8);
@@ -45,8 +52,10 @@ public class Main {
 				if (isOperator(tmp)) {
 					int tmpOutPriority = outStackPriority.get(tmp);
 					int tmpInsidePriority = inStackPriority.get(operator.peek());
-					if (tmpOutPriority >= tmpInsidePriority) {
+					if (tmpOutPriority > tmpInsidePriority) {
 						operator.push(tmp);
+					}else if(tmpOutPriority==tmpInsidePriority){
+						operator.pop();
 					} else if (tmpOutPriority < tmpInsidePriority) {
 						char op = operator.pop();
 						char result = Main.calculate(op);
