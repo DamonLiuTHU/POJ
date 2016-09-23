@@ -2,7 +2,140 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d41f2dc5-2508-4792-a1ff-a5b12ab0a70d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/leetcode392/Solution.java" afterPath="$PROJECT_DIR$/src/leetcode392/Solution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/leetcode/leetcode343/Solution.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/hiho1014/Main$Node.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/hiho1014/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/hiho1015/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/hiho1032/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/hiho1037/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/hiho1038/Main$Item.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/hiho1038/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/hiho1051/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/hiho1055/Main$Node.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/hiho1055/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/hiho1066/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/hiho1097/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/hiho1135/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/hiho1148/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q1004/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q1005/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q1006/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q1006/MainTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q1007/Main$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q1007/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q1008/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q1009/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q1009/v2/Main$InnerContainer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q1009/v2/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q1011/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q1012/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q1013/Main$state.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q1013/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q1015/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q1019/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q1042/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q1328/Main$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q1328/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q2109/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q2159/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q2479/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q2533/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q2593/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/q3299/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/hiho1374/Main.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1014/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1014/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1015/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1015/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1015/package-info.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1015/package-info.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1032/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1032/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1032/package-info.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1032/package-info.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1037/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1037/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1038/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1038/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1038/package-info.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1038/package-info.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1039/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1039/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1041/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1041/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1044/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1044/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1049/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1049/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1051/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1051/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1055/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1055/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1066/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1066/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1081/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1081/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1089/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1089/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1093/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1093/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1097/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1097/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1135/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1135/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1143/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1143/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1143/v2/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1143/v2/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1148/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1148/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1366/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1366/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1366/v2/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1366/v2/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1370/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1370/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1371/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1371/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/hiho1372/Main.java" afterPath="$PROJECT_DIR$/src/hihocode/hiho1372/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/leetcode122/Solution.java" afterPath="$PROJECT_DIR$/src/leetcode/leetcode122/Solution.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/leetcode167/Solution.java" afterPath="$PROJECT_DIR$/src/leetcode/leetcode167/Solution.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/leetcode167/Solution02.java" afterPath="$PROJECT_DIR$/src/leetcode/leetcode167/Solution02.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/leetcode238/Solution.java" afterPath="$PROJECT_DIR$/src/leetcode/leetcode238/Solution.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/leetcode260/Solution.java" afterPath="$PROJECT_DIR$/src/leetcode/leetcode260/Solution.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/leetcode260/Solution02.java" afterPath="$PROJECT_DIR$/src/leetcode/leetcode260/Solution02.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/leetcode338/Main.java" afterPath="$PROJECT_DIR$/src/leetcode/leetcode338/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/leetcode347/Solution.java" afterPath="$PROJECT_DIR$/src/leetcode/leetcode347/Solution.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/leetcode384/Solution.java" afterPath="$PROJECT_DIR$/src/leetcode/leetcode384/Solution.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/leetcode392/Solution.java" afterPath="$PROJECT_DIR$/src/leetcode/leetcode392/Solution.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1004/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1004/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1005/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1005/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1006/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1006/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1006/MainTest.java" afterPath="$PROJECT_DIR$/src/POJ/q1006/MainTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1007/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1007/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1008/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1008/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1009/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1009/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1009/v2/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1009/v2/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1011/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1011/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1012/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1012/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1012/package-info.java" afterPath="$PROJECT_DIR$/src/POJ/q1012/package-info.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1013/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1013/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1013/package-info.java" afterPath="$PROJECT_DIR$/src/POJ/q1013/package-info.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1015/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1015/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1015/package-info.java" afterPath="$PROJECT_DIR$/src/POJ/q1015/package-info.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1019/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1019/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1019/package-info.java" afterPath="$PROJECT_DIR$/src/POJ/q1019/package-info.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1042/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1042/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1042/package-info.java" afterPath="$PROJECT_DIR$/src/POJ/q1042/package-info.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1050/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1050/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1061/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1061/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1061/v2/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1061/v2/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1088/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1088/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1141/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1141/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1141/package-info.java" afterPath="$PROJECT_DIR$/src/POJ/q1141/package-info.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1159/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1159/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1163/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1163/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1207/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1207/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1258/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1258/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1273/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1273/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1328/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1328/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1328/package-info.java" afterPath="$PROJECT_DIR$/src/POJ/q1328/package-info.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1458/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1458/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q1664/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q1664/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q2027/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q2027/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q2106/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q2106/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q2109/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q2109/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q2109/package-info.java" afterPath="$PROJECT_DIR$/src/POJ/q2109/package-info.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q2159/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q2159/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q2159/package-info.java" afterPath="$PROJECT_DIR$/src/POJ/q2159/package-info.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q2299/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q2299/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q2388/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q2388/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q2479/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q2479/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q2479/package-info.java" afterPath="$PROJECT_DIR$/src/POJ/q2479/package-info.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q2533/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q2533/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q2533/package-info.java" afterPath="$PROJECT_DIR$/src/POJ/q2533/package-info.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q2593/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q2593/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q2593/package-info.java" afterPath="$PROJECT_DIR$/src/POJ/q2593/package-info.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q2709/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q2709/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q3264/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q3264/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q3299/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q3299/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q3299/package-info.java" afterPath="$PROJECT_DIR$/src/POJ/q3299/package-info.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/q3468/Main.java" afterPath="$PROJECT_DIR$/src/POJ/q3468/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="POJ.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,13 +157,14 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="Solution.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/leetcode392/Solution.java">
+        <entry file="file://$PROJECT_DIR$/src/leetcode/leetcode343/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-35">
-              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+            <state relative-caret-position="418">
+              <caret line="68" column="43" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
               <folding>
-                <element signature="e#1097#1098#0" expanded="true" />
-                <element signature="e#1178#1179#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2309#2310#0" expanded="true" />
+                <element signature="e#2376#2377#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,6 +192,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/leetcode384/Solution.java" />
         <option value="$PROJECT_DIR$/src/leetcode392/Solution.java" />
+        <option value="$PROJECT_DIR$/src/leetcode/leetcode343/Solution.java" />
       </list>
     </option>
   </component>
@@ -137,7 +272,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="leetcode392" />
+              <option name="myItemId" value="leetcode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="POJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="POJ" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leetcode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leetcode343" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -178,11 +335,11 @@
     <configuration default="false" name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="leetcode384.*" />
+          <option name="PATTERN" value="leetcode.leetcode384.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="leetcode384.Solution" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.leetcode384.Solution" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -198,11 +355,11 @@
     <configuration default="false" name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="leetcode392.*" />
+          <option name="PATTERN" value="leetcode.leetcode343.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="leetcode392.Solution" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.leetcode343.Solution" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -563,16 +720,16 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2563081" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2563081" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24609375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3997344" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997344" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -598,7 +755,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -607,13 +764,13 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/leetcode384/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/leetcode/leetcode384/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
           <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
           <folding>
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -629,13 +786,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/leetcode392/Solution.java">
+    <entry file="file://$PROJECT_DIR$/src/leetcode/leetcode392/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-35">
           <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
           <folding>
-            <element signature="e#1097#1098#0" expanded="true" />
-            <element signature="e#1178#1179#0" expanded="true" />
+            <element signature="e#1106#1107#0" expanded="true" />
+            <element signature="e#1187#1188#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leetcode/leetcode343/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="68" column="43" selection-start-line="68" selection-start-column="43" selection-end-line="68" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2309#2310#0" expanded="true" />
+            <element signature="e#2376#2377#0" expanded="true" />
           </folding>
         </state>
       </provider>
