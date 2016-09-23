@@ -66,7 +66,7 @@ public class Solution {
 //        }
 //
 //        return Math.max(condition1Result, condition2Result);
-        calculatedResults.put(n,maxValue);3
+        calculatedResults.put(n,maxValue);
         return maxValue;
     }
 
